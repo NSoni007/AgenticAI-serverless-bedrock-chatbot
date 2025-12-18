@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:us-east-1:<my-account-id>:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:<my-account-id>:log-group:/aws/lambda/myChatbotLambdaFunction:*"
+            ]
+        },
+        {
+            "Sid": "BedrockInvoke",
+            "Effect": "Allow",
+            "Action": "bedrock:InvokeModel",
+            "Resource": "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-text-express-v1"
+        }
+    ]
+}
