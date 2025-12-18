@@ -35,4 +35,7 @@ During the lab, I encountered an issue where the frontend was live, but the AI w
 5. **Connect:** Update the `API_URL` in your `index.html` with your API Gateway Invoke URL.
 
 ---
-Created by [Your Name] - [Your LinkedIn Link]
+Created by Narinder Soni - (https://www.linkedin.com/in/narinder-soni-9821095/)
+=======
+# AgenticAI
+Projects related to Agentic AI
